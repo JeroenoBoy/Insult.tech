@@ -17,7 +17,7 @@ const msg = {
 	amount: amount / workers
 }
 
-let stream = fs.createWriteStream('./insults/1.txt');
+let stream = fs.createWriteStream('../insults/1.txt');
 
 
 function write(msg) {
@@ -33,7 +33,7 @@ function write(msg) {
 		index = 0;
 		streamIndex++;
 		stream.close();
-		stream = fs.createWriteStream('./insults/'+ streamIndex +'.txt');
+		stream = fs.createWriteStream('../insults/'+ streamIndex +'.txt');
 	}
 
 	stream.write(msg + '\n')
