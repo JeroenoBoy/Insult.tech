@@ -3,7 +3,7 @@
 $url = urldecode($_SERVER['REQUEST_URI']);
 
 if($url != '/') {
-	$name = explode("/", $url)[1];
+	$name = htmlspecialchars(explode("/", $url)[1]);
 	$title = "Insult ".$name;
 }else {
 	$name = "Tech";
