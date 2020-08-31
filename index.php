@@ -45,14 +45,14 @@ fclose($myFile);
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title><?php echo $title ?></title>
-	<meta name="description" content="<?php echo $insult ?>.">
-    <meta name="twitter:description" content="<?php echo $insult ?>.">
+	<meta name="description" content="<?php echo $insult ?>">
+    <meta name="twitter:description" content="<?php echo $insult ?>">
     <meta name="twitter:image" content="assets/img/tech.jpg">
     <meta name="twitter:title" content="<?php echo $title ?>">
     <meta property="og:image" content="assets/img/tech.jpg">
     <meta property="og:type" content="">
     <meta name="twitter:card" content="summary">
-    <meta property="og:description" content="<?php echo $insult ?>.">
+    <meta property="og:description" content="<?php echo $insult ?>">
     <link rel="icon" type="image/jpeg" sizes="400x400" href="assets/img/tech.jpg">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.5.0/cosmo/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&amp;display=swap">
