@@ -13,7 +13,7 @@ $desc = "Google.com - The revolutionary tool to search thru the internet with 1 
 	<meta name="description" content="<?= $desc ?>">
 	<meta name="twitter:description" content="<?= $desc ?>">
 	<meta name="twitter:image" content="assets/img/tech.jpg">
-	<meta name="twitter:title" content="<?= $title ?>">
+	<meta name="twitter:title" content="Help someone google.">
 	<meta property="og:image" content="assets/img/tech.jpg">
 	<meta property="og:type" content="">
 	<meta name="twitter:card" content="summary">
