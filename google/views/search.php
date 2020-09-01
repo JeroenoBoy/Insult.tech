@@ -25,7 +25,7 @@ $desc = "Google.com - The revolutionary tool to search thru the internet with 1 
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	
 	<link rel="stylesheet" href="assets/css/styles.min.css">
-    <link href="assets/css/animate.min.css" rel="stylesheet"/>
+	<link href="assets/css/animate.min.css" rel="stylesheet"/>
 </head>
 
 <body>

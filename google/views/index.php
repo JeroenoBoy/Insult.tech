@@ -26,7 +26,7 @@ $desc = "Google.com - The revolutionary tool to search thru the internet with 1 
 		
 	<link rel="stylesheet" href="assets/css/styles.min.css">
 	<link rel="stylesheet" href="assets/css/index.min.css">
-    <link href="assets/css/animate.min.css" rel="stylesheet"/>
+	<link href="assets/css/animate.min.css" rel="stylesheet"/>
 </head>
 
 <body>
