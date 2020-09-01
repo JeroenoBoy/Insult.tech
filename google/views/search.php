@@ -64,7 +64,16 @@ $desc = "Google.com - The revolutionary tool to search thru the internet with 1 
 	<img id='mouse' src='assets/img/mouse_arrow.png' style='position:absolute;' />
 	
 	<script>
-		let url = "<?= $url ?>".replace('/', '');
+		let url = escapeHtml("<?= $url ?>".replace('/', '').split('/')[0]);
+
+		function escapeHtml(text) {
+			return text
+				.replace(/&/g, "&amp;")
+				.replace(/</g, "&lt;")
+				.replace(/>/g, "&gt;")
+				.replace(/"/g, "&quot;")
+				.replace(/'/g, "&#039;");
+			}
 	</script>
 </body>
 

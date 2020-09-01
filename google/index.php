@@ -15,7 +15,7 @@ $url = urldecode(str_replace($script_name, '', $_SERVER['REQUEST_URI']));
 if($url == '/') {
 	include "views/index.php";
 }else {
-	$name = htmlspecialchars(explode("/", $url)[1]);
+	$url = htmlspecialchars($url);
 	include "views/search.php";
 }
 
