@@ -1,0 +1,73 @@
+
+/* ==== UTIL ==== */
+#jumbo{
+	display:flex;
+	align-items:center;
+	width: 100vw;
+	height: 100vh;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+textarea.reset {
+	background: none;
+	border: none;
+	outline: none;
+	margin-top: 30px;
+	width: 500px;
+	max-height: 500px;
+    overflow: auto;
+}
+
+
+/* ==== search ==== */
+.search {
+	display: flex;
+	border: 1px solid #ccc;
+	border-radius: 28px;
+	width: 482px;
+	margin-top: 15px;
+	padding: 0px 5px 0px 5px;
+}
+
+.search > .icon {
+	background: none;
+	border: none;
+	color: #bbb !important;
+}
+
+.search > input {
+	background: none;
+	border: none;
+	outline: none;
+	width: 90%;
+	height: 34px;
+	margin: 5px 0px 5px 0px;
+}
+
+/* ==== buttons ==== */
+.buttonWrapper {
+	display:flex;
+	margin-top: 30px;
+}
+
+.buttons {
+	margin: auto;
+}
+
+.buttons > .button {
+	background-color: #f6f6f6;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	margin-left: 5px;
+	margin-right: 5px;
+
+	padding: 7px 20px 7px 20px;
+
+	font-weight: 400;
+}

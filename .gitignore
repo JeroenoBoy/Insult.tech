@@ -1,3 +1,4 @@
-/insults
-/old
-/sitemap.xml
+insults
+old
+node_modules
+sitemap.xml
