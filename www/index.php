@@ -15,14 +15,12 @@ $url = urldecode(str_replace($script_name, '', $_SERVER['REQUEST_URI']));
 //	Setting title & name to the person getting insulted
 if($url != '/') {
 	$name = htmlspecialchars(explode("/", $url)[1]);
-	$title = "Insult ".$name.".";
-	$desc = "Have you had enough of this fucking ".$name." guy on Discord? Click the button below to generate an insult specially made for that fucking bitch.";
-
+	
 } else {
-	$name = "<none>";
-	$title = "Insult.tech";
-	$desc = "Have you had enough of your friends insulting you? Insult.tech is the perfect solution! Click generate and insult someone for no reason!";
+	$name = "Tech";
 }
+$desc = "Have you had enough of this fucking ".$name." guy on Discord? Click the button below to generate an insult specially made for that fucking bitch.";
+$title = "Insult ".$name.".";
 
 
 /*
@@ -43,7 +41,7 @@ $insultsRAW = fread($myFile, filesize($file));
 if($insult == "a") {
 	$insult = "Couldn't load insult";
 
-} else if($user = "<none>") {
+} else if($name == "<none>") {
 	$insults = explode("\n", $insultsRAW);
 	$insult = str_replace( "REPLACE is", "You are", $insults[ array_rand( $insults ) ] );
 
