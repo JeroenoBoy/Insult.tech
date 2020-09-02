@@ -15,10 +15,14 @@ $url = urldecode(str_replace($script_name, '', $_SERVER['REQUEST_URI']));
 //	Setting title & name to the person getting insulted
 if($url != '/') {
 	$name = htmlspecialchars(explode("/", $url)[1]);
-}else {
-	$name = "Tech";
+	$title = "Insult ".$name.".";
+	$desc = "Have you had enough of this fucking ".$name." guy on Discord? Click the button below to generate an insult specially made for that fucking bitch.";
+
+} else {
+	$name = "<none>";
+	$title = "Insult.tech";
+	$desc = "Have you had enough of your friends insulting you? Insult.tech is the perfect solution! Click generate and insult someone for no reason!";
 }
-$title = "Insult ".$name;
 
 
 /*
@@ -38,9 +42,14 @@ $insultsRAW = fread($myFile, filesize($file));
 //	Checking if its set
 if($insult == "a") {
 	$insult = "Couldn't load insult";
-}else {
+
+} else if($user = "<none>") {
 	$insults = explode("\n", $insultsRAW);
-	$insult = str_replace("REPLACE", $name, $insults[array_rand($insults)]);
+	$insult = str_replace( "REPLACE is", "You are", $insults[ array_rand( $insults ) ] );
+
+} else {
+	$insults = explode("\n", $insultsRAW);
+	$insult = str_replace( "REPLACE", $name, $insults[ array_rand( $insults ) ] );
 }
 
 //	Closing file
@@ -48,7 +57,7 @@ fclose($myFile);
 
 
 function url($to) {
-	return $_SERVER['REQUEST_URI'].$to;
+	return $_SERVER['REQUEST_URI'] . $to;
 }
 ?>
 
@@ -75,7 +84,6 @@ function url($to) {
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		
 	<link rel="stylesheet" href="assets/css/styles.min.css">
-	<link href="assets/css/animate.min.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -86,8 +94,8 @@ function url($to) {
 		<div class="jumbotron" id="jumbo" style="width: 100vw;height: 100vh;margin: 0px;">
 			<div class="container text-center" style="max-width: 700px;margin: auto;">
 
-				<h1 class="display-2 text-monospace">Insult <?= $name ?>.</h1>
-				<p class="lead">Have you had enough of this fucking <?= $name ?> guy on Discord? Click the button below to generate an insult specially made for that fucking bitch.<br></p>
+				<h1 class="display-2 text-monospace"><?= $title ?></h1>
+				<p class="lead"><?= $desc ?></p>
 				<p><button class="btn btn-primary btn-lg text-monospace text-white" id="generate" type="button">Generate</button></p>
 				<textarea id="insult" readonly="readonly" class="reset px-3 py-1" style="border-width: 2px;border-style: solid;border-radius: 10px;"></textarea>
 			</div>
