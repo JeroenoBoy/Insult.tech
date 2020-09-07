@@ -1,6 +1,6 @@
 # Insult Tech 👿
 
-Ever wanted to easily insult your friends? Its never been easier!
+Ever wanted your friends to stop insulting you? Its never been easier!
 
 ## Installation
 
@@ -24,7 +24,6 @@ You need to export the following files to an apach/nginx server:
 
 ## Usage
 
-Link http(s)://example.com/ for default insults (insults Tech).
-Link http(s)://example.com/(name) to insult someone specific.
+Link http(s)://dont.example.com/ for default insults.
 
 When adding a name, it insults this person in the embed, and if you click it you can generate more insults.

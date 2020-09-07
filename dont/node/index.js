@@ -13,7 +13,7 @@ let streamIndex = 1;
 
 const msg = {
 	proxyUrl: '',
-	link: 'https://back.insult.tech/insult?who=REPLACE',
+	link: 'https://back.insult.tech/dont',
 	amount: amount / workers
 }
 

@@ -1,6 +1,6 @@
 # Insult Tech 👿
 
-Ever wanted to easily insult your friends? its never been easier!
+Ever wanted to easily insult your friends? Its never been easier!
 
 ## Installation
 
