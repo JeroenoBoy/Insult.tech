@@ -68,13 +68,17 @@ function url($to) {
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<title><?= $title ?></title>
 	<meta name="description" content="<?= $insult ?>">
+
+	<meta property="og:image" content="assets/img/tech.jpg">
+	<meta property="og:title" content="<?= $title ?>">
+	<meta property="og:description" content="<?= $insult ?>">
+
+	<meta name="theme-color" content="#BF00FF">
+	
 	<meta name="twitter:description" content="<?= $insult ?>">
 	<meta name="twitter:image" content="assets/img/tech.jpg">
 	<meta name="twitter:title" content="<?= $title ?>">
-	<meta property="og:image" content="assets/img/tech.jpg">
-	<meta property="og:type" content="">
 	<meta name="twitter:card" content="summary">
-	<meta property="og:description" content="<?= $insult ?>">
 	<link rel="icon" type="image/jpeg" sizes="400x400" href="assets/img/tech.jpg">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.5.0/cosmo/bootstrap.min.css">

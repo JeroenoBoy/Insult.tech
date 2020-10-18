@@ -11,13 +11,18 @@ $desc = "Google.com - The revolutionary tool to search thru the internet with 1 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<title>How hard can it be?</title>
 	<meta name="description" content="<?= $desc ?>">
+
+	<meta property="og:image" content="assets/img/tech.jpg">
+	<meta property="og:title" content="How hard can it be?">
+	<meta property="og:description" content="<?= $desc ?>">
+	<meta property="og:type" content="">
+
+	<meta name="theme-color" content="#BF00FF">
+
 	<meta name="twitter:description" content="<?= $desc ?>">
 	<meta name="twitter:image" content="assets/img/tech.jpg">
 	<meta name="twitter:title" content="Help someone google.">
-	<meta property="og:image" content="assets/img/tech.jpg">
-	<meta property="og:type" content="">
 	<meta name="twitter:card" content="summary">
-	<meta property="og:description" content="<?= $desc ?>">
 	<link rel="icon" type="image/jpeg" sizes="400x400" href="assets/img/icon.png">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.5.0/cosmo/bootstrap.min.css">
