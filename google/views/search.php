@@ -1,6 +1,6 @@
 <?php
 
-$desc = "Google.com - The revolutionary tool to search thru the internet with 1 singe click.";
+$desc = "Google.com - The revolutionary tool to search through the internet with a single click.";
 
 ?>
 <!DOCTYPE html>
